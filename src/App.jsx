@@ -1,10 +1,11 @@
 import React from 'react'
 import "./App.css";
+import Sidebar from './components/sidebar/Sidebar';
 
 const App = () => {
   return (
     <div>
-      <h1>hello</h1>
+      <Sidebar/>
       <section>
         {/* sections components */}
       </section>
