@@ -1,0 +1,57 @@
+.mantine-vcl0d1 {
+  /* bottom: -149px !important;
+  right: 146px !important; */
+  position: static !important;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.mantine-vcl0d1 > button > svg {
+  display: none;
+}
+.mantine-vcl0d1 > button {
+  border: 2px solid aquamarine;
+  position: relative;
+  transition: 1s;
+}
+.mantine-vcl0d1 > button::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  background-color: rgb(95, 247, 191);
+  border-radius: 50%;
+  transition: 1s;
+  opacity: 0;
+}
+
+.mantine-vcl0d1 > button:active::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  background-color: rgb(95, 247, 191);
+  border-radius: 50%;
+
+  opacity: 1;
+}
+.mantine-vcl0d1 > button:focus::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  background-color: rgb(95, 247, 191);
+  border-radius: 50%;
+  opacity: 1;
+}
+
+/* .mantine-vcl0d1 > button:focus + button:last-child:after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  background-color: rgb(95, 247, 191);
+  border-radius: 50%;
+  opacity: 1;
+} */

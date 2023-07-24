@@ -1,16 +1,16 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import "./App.css";
+import Landing from "./components/sections/landing/Landing";
+import Testimonial from "./components/sections/Testimonial/Testimonial";
 
 const App = () => {
   return (
     <div>
-      <h1>hello</h1>
-      <section>
-        {/* sections components */}
+      <section className="">
+        <Landing />
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default App
-
+export default App;

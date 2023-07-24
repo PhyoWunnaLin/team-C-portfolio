@@ -1,14 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 
-*{
-  font-family: 'Rubik', sans-serif;
+* {
+  font-family: "Rubik", sans-serif;
 }
 
-.primary-text{
-  color: #525FE1;
+.primary-text {
+  color: #525fe1;
 }
 
-.primary-bg{
-  background-color: #525FE1;
+.primary-bg {
+  background-color: #525fe1;
 }
 
+.circleMove {
+  animation: circleMoveAnimation 5s linear infinite;
+}
+@keyframes circleMoveAnimation {
+  0% {
+    transform: translateY(8px);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}

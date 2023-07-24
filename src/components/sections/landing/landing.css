@@ -1,0 +1,111 @@
+.transition-C {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 600ms;
+}
+.afterADD {
+  overflow: hidden;
+  margin-bottom: 45px;
+}
+.afterADD div:first-child {
+  animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    margin-top: -270px;
+    opacity: 1;
+  }
+  5% {
+    margin-top: -180px;
+    opacity: 1;
+  }
+  33% {
+    margin-top: -180px;
+    opacity: 1;
+  }
+  38% {
+    margin-top: -90px;
+    opacity: 1;
+  }
+  66% {
+    margin-top: -90px;
+    opacity: 1;
+  }
+  71% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+  99.99% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+/* calc(-40 * var(--i) px) */
+.leftImg {
+  position: relative;
+}
+.leftImg::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -5%;
+  width: 110%;
+  z-index: -19px;
+  height: 140%;
+  display: inline-block;
+  border: 2px solid brown;
+  background: transparent;
+}
+.leftImg::after {
+  content: "";
+  position: absolute;
+  width: 130%;
+  height: 120%;
+  top: -10%;
+  left: -14%;
+  display: inline-block;
+  border: 2px solid brown;
+  background: transparent;
+}
+.span {
+  display: none;
+}
+.text-in {
+  display: block;
+  animation: textIn 2s ease;
+}
+@keyframes textIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.text-out {
+  position: absolute;
+  animation: textOut 1s ease;
+  opacity: 0;
+  display: block;
+}
+
+@keyframes textOut {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-130%);
+    opacity: 0;
+  }
+}
